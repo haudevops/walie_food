@@ -1,0 +1,105 @@
+{
+  "status": true,
+  "data": [
+    {
+      "nameProduct": "Bánh canh ghẹ - Vũng Tàu",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-3_1632991188.jpg",
+      "descriptions": "Về miền Nam, bạn đừng bỏ qua món bánh canh ghẹ Vũng Tàu bổ dưỡng, mang trọn hương vị thơm ngon, mát lành của biển cả. Bánh canh có sợi to với độ day mềm vừa phải, ghẹ chắc thịt, ngọt thanh, ăn cùng nước dùng thơm phức sền sệt. Món ăn được dùng khi nóng, kèm thêm rau thơm, hạt tiêu đậm vị sẽ khiến thực khách nhớ mãi không thôi."
+    },
+    {
+      "nameProduct": "Bánh tráng trộn - Sài Gòn",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-4_1632991214.jpg",
+      "descriptions": "Bánh tráng trộn là món ăn vặt khiến nhiều người mê mẩn và nghiện lúc nào không hay. Sợi bánh tráng dai mềm trộn cùng bò khô, khô gà, đậu phộng, xoài xanh, rau răm và nước sốt đậm đà. \n\nTại Sài Gòn, đặc sản Việt Nam này có mặt ở khắp nẻo đường, hàng quán và được biến tấu với nhiều hương vị siêu hấp dẫn như: bánh tráng trộn tóp mỡ, trộn sa tế, bánh tráng bơ,... Chính vì thế mà món bánh tráng trộn có thể chiều lòng và chinh phục khẩu vị của mọi thực khách."
+    },
+    {
+      "nameProduct": "Thằn lằn Núi Bà Đen - Tây Ninh",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-5_1632991245.jpg",
+      "descriptions": "Ở núi Bà Đen Tây Ninh có một loại thằn lằn hình thù khác lạ và được chế biến thành nhiều món đặc sản Việt Nam thơm ngon, bổ dưỡng. Thằn lằn núi Tây Ninh có thịt khá dai, thơm ngọt và được xem là bài thuốc quý giúp bồi bổ sức khỏe, cải thiện chứng chán ăn, mệt mỏi, đau nhức xương khớp. "
+    },
+    {
+      "nameProduct": "Đặc sản vùng miền ngon - Bún kèn Phú Quốc",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-6_1632991275.jpg",
+      "descriptions": "Trong hành trình du lịch Phú Quốc, bạn đừng bỏ lỡ cơ hội thưởng thức món bún kèn - một đặc sản Việt Nam với vẻ ngoài dân dã, đơn giản. Tô bún được trình bày khá đơn sơ, nước dùng nấu từ cá nhồng hoặc cá ngân và sử dụng nước cốt dừa béo ngậy. Khi ăn, thực khách sẽ trộn đều tô bún, thêm chút chanh, giấm ớt và nước mắm cho đậm đà. Bún kèn Phú Quốc có vị ngọt thơm của cá, kết hợp với vị bùi, béo của nước lèo hài hòa với vị thanh mát của các loại rau ăn kèm. "
+    },
+    {
+      "nameProduct": "Gỏi cá trích - Phú Quốc",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-7_1632991306.jpg",
+      "descriptions": "Gỏi cá trích Phú Quốc được đánh giá là đặc sản Việt Nam số 1 tại vùng biển đảo. Món ăn là sự kết hợp hài hòa của những lát thịt cá tươi sống, thơm ngọt cùng nhiều loại rau thanh mát, vị bùi bùi của lạc rang, dừa nạo và nước sốt đậm đà. Gỏi cá trích được ăn cùng bánh tráng và thứ nước chấm đặc trưng được pha chế theo công thức bí truyền của người dân đảo ngọc. "
+    },
+    {
+      "nameProduct": "Lẩu mắm - Cần Thơ",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-8_1632991346.jpg",
+      "descriptions": "Thật thiếu sót nếu đến miền Tây mà bạn chưa thử qua lẩu mắm - món ăn độc đáo, đậm đà hương vị miền sông nước và thể hiện rõ nét văn hóa ẩm thực Nam Bộ. Nước dùng lẩu mắm được nấu từ mắm cá linh cùng rất nhiều nguyên liệu khác như: thịt heo, cá, tôm, mực,... "
+    },
+    {
+      "nameProduct": "Cá lóc nướng trui - Cần Thơ",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-9_1632991373.jpg",
+      "descriptions": "Ngoài lẩu mắm thì cá lóc nướng trui cũng là món ngon hấp dẫn của vùng đất phương Nam. Cá lóc còn gọi là cá quả, cá chuối được bắt từ sông lên, chỉ cần rửa sạch, không cần đánh vảy, sơ chế được xiên qua 1 chiếc que dài từ miệng đến đuôi rồi vùi vào đống rơm khô, châm lửa nướng. Khi tro tàn, cá cũng đã chín, chỉ cần cạo bỏ lớp vảy đen đã cháy xém là ăn được."
+    },
+    {
+      "nameProduct": "Bún cá - Nha Trang",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-10_1633071461.jpg",
+      "descriptions": "Bún cá Nha Trang là món ngon đặc sản của tỉnh Khánh Hòa với hương vị đặc biệt khó nhầm lẫn. Món bún có nước dùng trong, ngọt thanh, hương vị đậm đà của chả cá giòn dai. Bún cá là sự hòa quyện tuyệt vời của màu sắc và hương vị của nhiều loại nguyên liệu như: bún, chả cá hấp, chả chiên, chả dầm, sứa tươi và nhiều loại rau ăn kèm. Đây là món ăn đặc sản Việt Nam vô cùng hấp dẫn, có thể làm vừa lòng mọi thực khách khó tính trong hành trình du lịch Nha Trang."
+    },
+    {
+      "nameProduct": "Bánh tráng cuốn thịt heo - Đà Nẵng",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-11_1632991459.jpg",
+      "descriptions": "Bánh tráng cuốn thịt heo là một trong những đặc sản Đà Nẵng nói riêng và xứ Quảng nói chung. Miếng bánh tráng phơi sương dai mềm, cuốn cùng lát thịt heo luộc thái mỏng béo ngậy chấm cùng mắm nêm đậm đà vị mặn ngọt, cay nồng đặc trưng. "
+    },
+    {
+      "nameProduct": "Mì Quảng - Quảng Nam",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-12_1632991500.jpg",
+      "descriptions": "Mì Quảng được ví như linh hồn của ẩm thực Đà Nẵng, Quảng Nam và là một đặc sản Việt Nam được đông đảo du khách biết đến. Món ăn này vừa bình dị, vừa dân dã với sợi mì được làm từ bột gạo dai mềm, chan lên nước dùng đậm đà được hầm từ xương heo và ăn kèm nhiều loại topping như: thịt heo, thịt gà, cá lóc, ếch, trứng cút luộc,... Mì Quảng chưa thể trọn vị khi thiếu lạc rang giòn, hành lá, các loại rau thơm, ớt đỏ và bánh tráng mè."
+    },
+    {
+      "nameProduct": "Bún bò - Huế",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-13_1632991543.jpg",
+      "descriptions": "Bún bò Huế là một đặc sản Việt Nam đến từ vùng đất cố đô, món ăn khiến thực khách mọi miền thương nhớ bởi màu sắc bắt mắt và hương vị đậm đà, đủ vị cay ngọt, béo bùi. Điểm khác biệt của đặc sản Huế này là sợi bún to, lát thịt bò thơm ngọt, tiết heo, chả cua béo bùi ăn kèm hành, rau mùi, giá đỗ, bắp chuối bào thanh mát. Linh hồn của món ăn là nước dùng có vị ngọt đậm đà được ninh từ xương ống bò, thêm chút mắm ruốc và sả để dậy mùi thơm nồng. "
+    },
+    {
+      "nameProduct": "Súp lươn - Nghệ An",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-14_1632991579.jpg",
+      "descriptions": "Tuy là một món ăn dân dã nhưng súp lươn Nghệ An khiến nhiều thực khách mê mẩn với hương vị đặc biệt. Súp lươn vinh dự là đặc sản Việt Nam được CNN bình chọn là một trong 7 món ăn sáng ngon nhất thế giới. Món ăn gây ấn tượng với thịt lươn chắc ngọt hòa quyện cùng phần nước súp béo nhẹ và vị cay nồng thơm phức của hành tăm, nghệ, tiêu và ớt. Du lịch Nghệ An, bạn sẽ dễ dàng bắt gặp rất nhiều hàng quán bán súp lươn trên đường và các gánh hàng bên góc phố."
+    },
+    {
+      "nameProduct": "Súp lươn - Nghệ An",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-14_1632991579.jpg",
+      "descriptions": "Tuy là một món ăn dân dã nhưng súp lươn Nghệ An khiến nhiều thực khách mê mẩn với hương vị đặc biệt. Súp lươn vinh dự là đặc sản Việt Nam được CNN bình chọn là một trong 7 món ăn sáng ngon nhất thế giới. Món ăn gây ấn tượng với thịt lươn chắc ngọt hòa quyện cùng phần nước súp béo nhẹ và vị cay nồng thơm phức của hành tăm, nghệ, tiêu và ớt. Du lịch Nghệ An, bạn sẽ dễ dàng bắt gặp rất nhiều hàng quán bán súp lươn trên đường và các gánh hàng bên góc phố."
+    },
+    {
+      "nameProduct": "Kẹo cu đơ Hà Tĩnh",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-15_1632991614.jpg",
+      "descriptions": "Kẹo cu đơ Hà Tĩnh là một trong các loại bánh kẹo đặc sản Việt Nam được nhiều người yêu thích. Thức quà này có lớp bánh tráng mềm dẻo bên ngoài, phần giữa là nhân đậu phộng rang, mật mía và gừng tươi. Kẹo có vị ngọt thanh, béo bùi của đậu phộng, độ sánh vừa phải của mật mía và chút cay nồng của gừng. Du lịch Hà Tĩnh, thưởng thức kẹo cu đơ và nhâm nhi một tách trà xanh thì không còn gì tuyệt vời hơn.  "
+    },
+    {
+      "nameProduct": "Nem chua - Thanh Hóa",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-16_1632991644.jpg",
+      "descriptions": "Người dân xứ Thanh còn khéo léo kết hợp thêm lá đinh lăng tạo nên vị thơm nồng độc đáo. Đặc sản Việt Nam này được chế biến theo công thức gia truyền với thời gian ủ linh hoạt theo mùa để tạo nên vị chua vừa đủ. Nhờ dư vị khó quên, nem chua là thức quà được nhiều du khách lựa chọn sau chuyến du lịch Thanh Hóa."
+    },
+    {
+      "nameProduct": "Bánh xèo -  Quảng Bình",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-17_1632991705.jpg",
+      "descriptions": "Bánh xèo Quảng Bình là đặc sản Việt Nam nổi tiếng với hương vị thơm ngon khó cưỡng và màu đỏ lạ mắt của bột gạo lứt. Món bánh có công thức chế biến hoàn toàn khác biệt với nguyên liệu chính là bột lứt, trộn cùng hành hẹ cắt nhỏ."
+    },
+    {
+      "nameProduct": "Sữa chua trân châu Hạ Long - Quảng Ninh",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-18_1632991740.jpg",
+      "descriptions": "Sữa chua trân châu Hạ Long là đặc sản nổi tiếng của thành phố kỳ quan. Món ăn này thu hút thực khách bởi sự kết hợp hài hòa giữa vị dẻo mịn, thanh mát của sữa chua cùng độ dẻo dai của trân châu và vị béo ngậy của nước cốt dừa. Tất cả được hòa quyện tạo nên hương vị thơm ngon khó cưỡng. "
+    },
+    {
+      "nameProduct": "Chả mực - Quảng Ninh",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-19_1632991775.jpg",
+      "descriptions": "Chả mực Hạ Long, Quảng Ninh được làm từ mực mai tươi ngon của vùng biển theo công thức gia truyền, được giã hoàn toàn bằng tay, nắm thành những miếng vừa ăn và chiên ngập trong chảo dầu sôi. "
+    },
+    {
+      "nameProduct": "Bún cá cay - Hải Phòng",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-20_1632991805.jpg",
+      "descriptions": "Bún cá Hải Phòng là một đặc sản Việt Nam có sự kết hợp hài hòa giữa hương vị biển cả và đồng nội. Món ăn này đại diện cho ẩm thực đất cảng với hương vị ngọt thanh của nước dùng ninh từ đầu cá, xương cá và xương heo. "
+    },
+    {
+      "nameProduct": "Cá kho Vũ Đại Hà Nam",
+      "image": "https://statics.vinpearl.com/dac-san-viet-nam-21_1632991835.jpg",
+      "descriptions": "Đặc sản Việt Nam cá kho làng Vũ Đại có từ rất lâu đời và là món ngon nức tiếng khắp trong và ngoài nước. Món cá kho đặc sản Hà Nam được chế biến theo công thức rất riêng và phải trải qua rất nhiều công đoạn đòi hỏi sự tỉ mỉ và công phu. Loại cá thường được dùng là cá trắm, cá bống, cá diếc hoặc cá chạch tươi sống. "
+    }
+  ]
+}

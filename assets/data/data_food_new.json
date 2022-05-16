@@ -1,0 +1,54 @@
+{
+  "status": true,
+  "data": [
+    {
+      "nameProduct": "Thịt trâu gác bếp",
+      "image": "https://mocchaufood.vn/wp-content/uploads/2022/03/thit-lon-gac-bep.jpg",
+      "region": " Hà Giang",
+      "descriptions": "Đến với Hà Giang, ngồi quây quần bên mâm cơm, lai rai vài miếng thịt trâu vừa lấy từ trên gác bếp xuống, nhấm nháp từng múi thịt thơm lừng, đậm đà còn nguyên mùi khói với vị cay của ớt, vị nồng của mắc khén… khiến ai từng từng đến đây sẽ muốn quay lại lần nữa để thưởng thức món ngon này"
+    },
+    {
+      "nameProduct": "Gà nướng Sapa",
+      "image": "https://dichoisapa.com/wp-content/uploads/2018/10/quan-ga-ngon-sapa7.jpg",
+      "region": "Lào Cai",
+      "descriptions": "Mùa đông Sapa với cái lạnh trong từng hơi thở, vào lúc màn đêm bao trùm toàn thị trấn, chắc chẳng có gì tuyệt vời hơn khi ngồi bên bếp lửa hồng và nhâm nhi những món đồ nướng nóng hổi. Một đĩa dạ dày, cá hồi, trứng gà chín, xâu thịt nướng… với mùi thơm phưng phức đủ để xua tan cái lạnh tê tái của núi rừng Tây Bắc."
+    },
+    {
+      "nameProduct": "Phở chua",
+      "image": "https://cdn.tgdd.vn/Files/2020/04/29/1252697/cach-lam-pho-chua-lang-son-thom-ngon-don-gian-ngay-tai-nha-2.jpg",
+      "region": "Lạng Sơn",
+      "descriptions": "Phở chua được làm bởi bánh phở tươi thái nhỏ được trộn với các loại gia vị, thịt xá xíu, lạc rang giã nhỏ, trứng vịt lộn bổ tư và nước đủ (hay còn gọi nước sốt) cùng các loại gia vị khác. Món ăn này được chế biến khá cầu kỳ và hương vị chua ngòn ngọt, cay cay, bùi bùi."
+    },
+    {
+      "nameProduct": "Lợn cắp nách",
+      "image": "https://tripzone.vn/uploads/202106/23/12/164015-lon-cap-nach-quay-lai-chau.jpg",
+      "region": "Lai Châu",
+      "descriptions": "Lợn cắp nách Lai Châu (hay còn gọi là lợn lửng) là một món ăn đặc trưng chỉ có ở vùng cao. Lợn cắp nách ngon từ thịt, ngọt từ xương nên làm món gì cũng rất hấp dẫn. Dù hấp, nướng, hun khói, xào hay luộc thì thịt vẫn ngon. Thịt lợn cắp nách vừa thơm, chắc mà hoàn toàn không ngấy, dù gắp phải miếng mỡ đi chăng nữa."
+    },
+    {
+      "nameProduct": "Xôi chim Mường Thanh",
+      "image": "http://baoninhbinh.org.vn/DATA/ARTICLES/2021/1/15/xoi-trung-kien-dac-san-huong-vi-nui-rung-nho-quan-ff00e.jpg",
+      "region": "Điện Biên",
+      "descriptions": "Nếu đến Mường Thanh (tỉnh Điện Biên) trong dịp tết, bạn sẽ được thưởng thức món xôi chim ngon tuyệt. Xôi chim được bày trên mâm có nắp đậy để giữ xôi luôn ấm và mềm. Sở dĩ xôi chim dẻo thơm bởi hạt nếp nương sau hai lần đồ bằng chõ gỗ và béo ngọt nhờ vị thịt chim câu mới ra ràng."
+    },
+    {
+      "nameProduct": "Chả gà Tiểu Quan",
+      "image": "https://www.amthuccotruyen.com/images/cha_ga2.jpg",
+      "region": "Hưng Yên",
+      "descriptions": "Chả gà Tiểu Quan là món ăn nổi tiếng có xuất xứ từ thôn Tiểu Quan, huyện Khoái Châu, Hưng Yên. Chả gà là một món ăn độc đáo, không thể ăn bỗ bã như các món khác mà cần phải nhấm nháp từng chút một để cảm nhận hương vị ngậy, ngọt, béo, thơm, cay… của chả."
+    },
+    {
+      "nameProduct": "Chè kho Nam Định",
+      "image": "https://poliva.vn/wp-content/uploads/2019/07/che-kho-2.jpg",
+      "region": "Nam Định",
+      "descriptions": "Chè kho Nam Định là một món ăn dân dã đặc sắc và được chế biến rất công phu. Chỉ bằng những hạt đỗ xanh nhỏ, lòng vàng, tơi bở và lượng đường vừa đủ, qua bàn tay khéo léo của người nấu, ta đã có những đĩa chè ngon. Chè khi nấu càng được quấy kỹ và đều tay thì thành phẩm sẽ càng ngon ngọt và để được lâu hơn. Nhiều thực khách còn biết đến một đặc sản khác của Nam Định là món bánh gia bà Thi."
+    },
+    {
+      "nameProduct": "Tu hài Quảng Ninh",
+      "image": "http://www.duthuyen-halong.com/sites/t/to/tourduthuyenhalong/uploads/ckfinder/images/tuhai1.jpg",
+      "region": "Quảng Ninh",
+      "descriptions": "Tu hài là một hải sản không quen thuộc và có nhiều như tôm, cua, sò, ốc,… nhưng nếu được một lần thưởng thức hương vị đặc trưng của món ngon miền biển này thì không thể nào quên được. Món tu hài hấp khai vị ăn vừa mát vừa thanh, vừa có có dư vị ngọt rất riêng. Thịt tu hài hấp giòn, quyện với mùi gia vị thơm nức. Tu hài nướng bơ hành, nướng mắm cũng cực kỳ hấp dẫn thực khách."
+    }
+
+  ]
+}

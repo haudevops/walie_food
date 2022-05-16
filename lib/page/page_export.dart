@@ -1,0 +1,10 @@
+export 'package:walie_food/page/home/home_page.dart';
+export 'package:walie_food/page/login/login_page.dart';
+export 'package:walie_food/page/splash_screen/splash_screen.dart';
+export 'package:walie_food/page/setting/setting_page.dart';
+export 'package:walie_food/page/navigation_page.dart';
+export 'package:walie_food/widget/view_image_widget.dart';
+export 'package:walie_food/page/info_user/info_user_page.dart';
+export 'package:walie_food/page/save_item/save_item_page.dart';
+export 'package:walie_food/page/change_password/change_password_page.dart';
+export 'package:walie_food/page/news/news_page.dart';
