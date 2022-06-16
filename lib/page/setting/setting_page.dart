@@ -1,5 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:provider/provider.dart';
 import 'package:walie_food/generated/l10n.dart';
 import 'package:walie_food/page/page_export.dart';
@@ -22,12 +25,14 @@ class _SettingPageState extends State<SettingPage> {
   String name = 'Hau Tran';
   final _user = FirebaseAuth.instance.currentUser!;
 
+
   @override
   void initState() {
     super.initState();
     String? languageLocal = PrefsUtil.getString(Constants.LANGUAGE_CHANGE);
     _checkLanguage =
         (languageLocal != null && languageLocal == Constants.ENGLISH);
+
   }
 
   @override
@@ -42,8 +47,9 @@ class _SettingPageState extends State<SettingPage> {
       children: [
         Container(
           margin: EdgeInsets.only(
-              top: ScreenUtil.getInstance().getAdapterSize(35),
-              bottom: ScreenUtil.getInstance().getAdapterSize(20)),
+              top: ScreenUtil.getInstance().getAdapterSize(35)),
+          padding: EdgeInsets.only(
+              top: ScreenUtil.getInstance().getAdapterSize(20)),
           child: Text(
             S.current.settings,
             style: TextStyle(
@@ -55,8 +61,6 @@ class _SettingPageState extends State<SettingPage> {
         Expanded(
           child: SingleChildScrollView(
             child: Container(
-              height: ScreenUtil.getInstance().screenHeight,
-              width: ScreenUtil.getInstance().screenWidth,
               padding:
                   EdgeInsets.all(ScreenUtil.getInstance().getAdapterSize(16)),
               child: _menuWidget(context),
@@ -87,7 +91,9 @@ class _SettingPageState extends State<SettingPage> {
               Icons.settings,
               color: Colors.pinkAccent,
             ),
-            checkTrailing: true),
+            checkTrailing: true,
+          onTap: (){},
+        ),
         _cardFunctions(
             title: S.current.change_password,
             widget: const Icon(
@@ -319,9 +325,9 @@ class _SettingPageState extends State<SettingPage> {
           topLeft: Radius.circular(20),
         ),
       ),
-      builder: (BuildContext context) {
+      builder: (BuildContext buildContext) {
         return StatefulBuilder(
-          builder: (context, setState) {
+          builder: (buildContext, setState) {
             return Container(
               height: ScreenUtil.getInstance().getAdapterSize(200),
               padding:

@@ -1,4 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -10,9 +12,17 @@ import 'package:walie_food/utils/provider/provider_export.dart';
 import 'package:walie_food/utils/util_export.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() async {
+Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  await Firebase.initializeApp();
+  if (kDebugMode) {
+    print('Handling a background message ${message.messageId}');
+  }
+}
+
+Future<void> main() async {
   Widget app = await initializeApp();
   await Firebase.initializeApp();
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   runApp(app);
 }
