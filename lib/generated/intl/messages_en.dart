@@ -60,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "save_item": MessageLookupByLibrary.simpleMessage("Save"),
         "settings": MessageLookupByLibrary.simpleMessage("Setting"),
         "vietnamese": MessageLookupByLibrary.simpleMessage("Vietnamese"),
+        "walie_app": MessageLookupByLibrary.simpleMessage("Walie"),
         "want_to_logout":
             MessageLookupByLibrary.simpleMessage("Want to logout?"),
         "weight": MessageLookupByLibrary.simpleMessage("Weight"),

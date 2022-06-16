@@ -409,6 +409,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Walie`
+  String get walie_app {
+    return Intl.message(
+      'Walie',
+      name: 'walie_app',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

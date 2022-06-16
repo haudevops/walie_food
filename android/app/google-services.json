@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668323977279",
+    "project_id": "walie-food",
+    "storage_bucket": "walie-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668323977279:android:71832ea51c95ddbf5a808a",
+        "android_client_info": {
+          "package_name": "com.wille.walie_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668323977279-mnpemreccu0g7togmrgekuh7i39954qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm6Hlr5i7NkN3hMNxHWd5aQKPDmcHRqXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668323977279-mnpemreccu0g7togmrgekuh7i39954qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

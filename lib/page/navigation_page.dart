@@ -49,11 +49,11 @@ class _NavigationPageState extends State<NavigationPage> {
   Widget _navigateToScreen(int index) {
     switch (index) {
       case 0:
-        return HomePage();
+        return const HomePage();
       case 1:
-        return SettingPage();
+        return const SettingPage();
       default:
-        return HomePage();
+        return const HomePage();
     }
   }
 }

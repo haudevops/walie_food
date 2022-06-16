@@ -1,8 +1,10 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:walie_food/generated/l10n.dart';
 import 'package:walie_food/page/page_export.dart';
 import 'package:walie_food/routers/routers_export.dart';
+import 'package:walie_food/utils/provider/login_provider.dart';
 import 'package:walie_food/utils/provider/provider_export.dart';
 import 'package:walie_food/utils/util_export.dart';
 
@@ -15,11 +17,10 @@ class SettingPage extends StatefulWidget {
 }
 
 class _SettingPageState extends State<SettingPage> {
-  bool _toggleTheme = false;
-  bool _toggleLanguage = false;
   bool _isOnline = false;
   late bool _checkLanguage;
   String name = 'Hau Tran';
+  final _user = FirebaseAuth.instance.currentUser!;
 
   @override
   void initState() {
@@ -37,19 +38,7 @@ class _SettingPageState extends State<SettingPage> {
   }
 
   Widget _bodyWidget(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        height: ScreenUtil.getInstance().screenHeight,
-        width: ScreenUtil.getInstance().screenWidth,
-        padding: EdgeInsets.all(ScreenUtil.getInstance().getAdapterSize(16)),
-        child: _menuWidget(context),
-      ),
-    );
-  }
-
-  Widget _menuWidget(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
           margin: EdgeInsets.only(
@@ -63,6 +52,25 @@ class _SettingPageState extends State<SettingPage> {
             ),
           ),
         ),
+        Expanded(
+          child: SingleChildScrollView(
+            child: Container(
+              height: ScreenUtil.getInstance().screenHeight,
+              width: ScreenUtil.getInstance().screenWidth,
+              padding:
+                  EdgeInsets.all(ScreenUtil.getInstance().getAdapterSize(16)),
+              child: _menuWidget(context),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _menuWidget(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
         _userWidget(),
         _themeMode(context),
         SizedBox(height: ScreenUtil.getInstance().getAdapterSize(10)),
@@ -75,14 +83,14 @@ class _SettingPageState extends State<SettingPage> {
         SizedBox(height: ScreenUtil.getInstance().getAdapterSize(10)),
         _cardFunctions(
             title: S.current.settings,
-            widget: Icon(
+            widget: const Icon(
               Icons.settings,
               color: Colors.pinkAccent,
             ),
             checkTrailing: true),
         _cardFunctions(
             title: S.current.change_password,
-            widget: Icon(
+            widget: const Icon(
               Icons.vpn_key,
               color: Colors.pinkAccent,
             ),
@@ -100,7 +108,7 @@ class _SettingPageState extends State<SettingPage> {
         SizedBox(height: ScreenUtil.getInstance().getAdapterSize(10)),
         _cardFunctions(
             title: S.current.news,
-            widget: Icon(
+            widget: const Icon(
               Icons.notification_important_rounded,
               color: Colors.pinkAccent,
             ),
@@ -110,7 +118,7 @@ class _SettingPageState extends State<SettingPage> {
             }),
         _cardFunctions(
             title: S.current.save_item,
-            widget: Icon(
+            widget: const Icon(
               Icons.save,
               color: Colors.pinkAccent,
             ),
@@ -128,7 +136,7 @@ class _SettingPageState extends State<SettingPage> {
         SizedBox(height: ScreenUtil.getInstance().getAdapterSize(10)),
         _cardFunctions(
           title: S.current.language,
-          widget: Icon(
+          widget: const Icon(
             Icons.language,
             color: Colors.pinkAccent,
           ),
@@ -139,7 +147,7 @@ class _SettingPageState extends State<SettingPage> {
         ),
         _cardFunctions(
             title: S.current.logout,
-            widget: Icon(
+            widget: const Icon(
               Icons.logout,
               color: Colors.pinkAccent,
             ),
@@ -161,13 +169,14 @@ class _SettingPageState extends State<SettingPage> {
         leading: GestureDetector(
           onTap: () {
             Navigator.pushNamed(context, ViewImageWidget.routeName,
-                arguments: ScreenArguments(arg1: 'assets/img/user.jpg'));
+                arguments: ScreenArguments(
+                    arg1: _user.photoURL ?? 'assets/img/user.jpg'));
           },
           child: Hero(
             tag: 'dash',
             child: ClipOval(
-              child: Image.asset(
-                'assets/img/user.jpg',
+              child: Image.network(
+                _user.photoURL ?? 'assets/img/user.jpg',
                 height: 40,
                 width: 40,
                 fit: BoxFit.cover,
@@ -176,7 +185,7 @@ class _SettingPageState extends State<SettingPage> {
           ),
         ),
         title: Text(
-          name,
+          ' ${_user.displayName ?? 'User'}',
           style:
               TextStyle(fontSize: ScreenUtil.getInstance().getAdapterSize(16)),
         ),
@@ -188,7 +197,9 @@ class _SettingPageState extends State<SettingPage> {
           Navigator.pushNamed(
             context,
             InfoUserPage.routeName,
-            arguments: ScreenArguments(arg1: name, arg2: 'assets/img/user.jpg'),
+            arguments: ScreenArguments(
+                arg1: _user.displayName ?? name,
+                arg2: _user.photoURL ?? 'assets/img/user.jpg'),
           );
         },
       ),
@@ -200,27 +211,25 @@ class _SettingPageState extends State<SettingPage> {
       bool checkTrailing = false,
       Widget? widget,
       GestureTapCallback? onTap}) {
-    return Expanded(
-      child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+    return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      elevation: 1,
+      child: ListTile(
+        leading: widget,
+        title: Text(
+          title ?? 'User',
+          style:
+              TextStyle(fontSize: ScreenUtil.getInstance().getAdapterSize(16)),
         ),
-        elevation: 1,
-        child: ListTile(
-          leading: widget,
-          title: Text(
-            title ?? 'User',
-            style: TextStyle(
-                fontSize: ScreenUtil.getInstance().getAdapterSize(16)),
-          ),
-          trailing: checkTrailing
-              ? Icon(
-                  Icons.navigate_next,
-                  size: ScreenUtil.getInstance().getAdapterSize(26),
-                )
-              : SizedBox(),
-          onTap: onTap,
-        ),
+        trailing: checkTrailing
+            ? Icon(
+                Icons.navigate_next,
+                size: ScreenUtil.getInstance().getAdapterSize(26),
+              )
+            : const SizedBox(),
+        onTap: onTap,
       ),
     );
   }
@@ -232,7 +241,7 @@ class _SettingPageState extends State<SettingPage> {
         borderRadius: BorderRadius.circular(10),
       ),
       child: SwitchListTile(
-        title: Text('Dark Mode'),
+        title: const Text('Dark Mode'),
         value: _isOnline,
         secondary: Icon(
           Icons.color_lens,
@@ -265,17 +274,25 @@ class _SettingPageState extends State<SettingPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Container(
+                SizedBox(
                   width: ScreenUtil.getInstance().getAdapterSize(100),
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pop(context);
+                      final provider = Provider.of<GoogleSignInProvider>(
+                          context,
+                          listen: false);
+                      provider.googleLogout();
+                      PrefsUtil.clear();
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        Navigator.pushNamedAndRemoveUntil(
+                            context, SplashScreen.routeName, (route) => false);
+                      });
                     },
                     style: ElevatedButton.styleFrom(primary: Colors.pinkAccent),
                     child: Text(S.current.logout),
                   ),
                 ),
-                Container(
+                SizedBox(
                   width: ScreenUtil.getInstance().getAdapterSize(100),
                   child: ElevatedButton(
                     onPressed: () {
@@ -296,7 +313,7 @@ class _SettingPageState extends State<SettingPage> {
   _showLanguageDialog() {
     return showModalBottomSheet(
       context: context,
-      shape: RoundedRectangleBorder(
+      shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(20),
           topLeft: Radius.circular(20),

@@ -31,7 +31,7 @@ class _ViewImageWidgetState extends State<ViewImageWidget> {
         width: ScreenUtil.getInstance().screenWidth,
         child: Hero(
           tag: 'dash',
-          child: Image.asset(image ?? '', fit: BoxFit.cover,),
+          child: Image.network(image ?? '', fit: BoxFit.cover,),
         ),
       ),
     );

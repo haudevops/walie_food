@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:walie_food/utils/util_export.dart';
 
-class LanguageProvider with ChangeNotifier {
+class LanguageProvider extends ChangeNotifier {
   late Locale _currentLocale;
 
   Locale get currentLocale => _currentLocale;
@@ -15,13 +15,13 @@ class LanguageProvider with ChangeNotifier {
     if (languageLocal != null && languageLocal.isNotEmpty) {
       _currentLocale = Locale(languageLocal);
     } else {
-      _currentLocale = Locale(Constants.VIETNAMESE);
+      _currentLocale = const Locale(Constants.VIETNAMESE);
     }
   }
 
-  void changeLocale(String _locale) {
-    this._currentLocale = new Locale(_locale);
-    PrefsUtil.putString(Constants.LANGUAGE_CHANGE, _locale);
+  void changeLocale(String locale) {
+    _currentLocale = Locale(locale);
+    PrefsUtil.putString(Constants.LANGUAGE_CHANGE, locale);
     notifyListeners();
   }
 }

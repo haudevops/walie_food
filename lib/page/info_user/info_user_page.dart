@@ -34,7 +34,7 @@ class _InfoUserPageState extends State<InfoUserPage> {
             stretch: true,
             expandedHeight: ScreenUtil.getInstance().getAdapterSize(200),
             flexibleSpace: FlexibleSpaceBar(
-              background: Image.asset(
+              background: Image.network(
                 _image,
                 fit: BoxFit.cover,
               ),

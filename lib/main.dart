@@ -1,22 +1,26 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:walie_food/generated/l10n.dart';
 import 'package:walie_food/page/page_export.dart';
 import 'package:walie_food/routers/routers_export.dart';
+import 'package:walie_food/utils/provider/login_provider.dart';
 import 'package:walie_food/utils/provider/provider_export.dart';
 import 'package:walie_food/utils/util_export.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() async {
   Widget app = await initializeApp();
+  await Firebase.initializeApp();
+
   runApp(app);
 }
 
 Future<Widget> initializeApp() async {
   WidgetsFlutterBinding.ensureInitialized();
   await PrefsUtil.getInstance();
-  return MyApp();
+  return const MyApp();
 }
 
 class MyApp extends StatefulWidget {
@@ -37,12 +41,14 @@ class _MyAppState extends State<MyApp> {
             create: (context) => LanguageProvider()),
         ChangeNotifierProvider<ThemeProvider>(
           create: (context) => ThemeProvider(),
-        )
+        ),
+        ChangeNotifierProvider<GoogleSignInProvider>(
+            create: (context) => GoogleSignInProvider()),
       ],
       child: Builder(
         builder: (context) => MaterialApp(
           title: 'Walie App',
-          locale: Provider.of<LanguageProvider>(context, listen: true)
+          locale: Provider.of<LanguageProvider>(context, listen: false)
               .currentLocale,
           localizationsDelegates: const [
             S.delegate,
